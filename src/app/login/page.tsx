@@ -48,9 +48,9 @@ const Login = () => {
       localStorage.setItem("user", JSON.stringify(user));
       setTimeout(() => {
         if (user.role === "admin") {
-          router.push("/admin");
+          router.push("/");
         } else {
-          router.push("/user-dashboard");
+          router.push("/");
         }
       }, 3000); // Redirect after 3 seconds
     } catch (error) {
